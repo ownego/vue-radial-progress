@@ -36,7 +36,7 @@
               :stroke="'url(#radial-gradient' + _uid + ')'"
               :stroke-dasharray="circumference"
               :stroke-dashoffset="circumference"
-              stroke-linecap="round"
+              :stroke-linecap="lineCap"
               :style="progressStyle"></circle>
     </svg>
   </div>
@@ -49,6 +49,11 @@ export default {
       type: Number,
       required: false,
       default: 200
+    },
+    lineCap: {
+      type: String,
+      required: false,
+      default: 'square'
     },
     totalSteps: {
       type: Number,
