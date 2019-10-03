@@ -12,7 +12,7 @@
 # Installation
 
 ``` bash
-$ npm install --save vue-radial-progress
+$ yarn add https://github.com/ownego/vue-radial-progress
 ```
 
 # Usage
@@ -49,6 +49,7 @@ export default {
 Name | Default value | Description
 ---|:---:|---
 `diameter` | `200` | Diameter of the progress bar circle in pixels.
+`lineCap` | `round` | Stroke linecap type. One of `round`, `butt`, `square`.
 `totalSteps` | `10` | Total number of steps to complete progress bar.
 `completedSteps` | `0` | Number of completed steps in the progress bar.
 `startColor` | `#bbff42` | The color of the leading edge of the progress bar gradient.
